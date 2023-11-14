@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "SocialFi",
   "main": "server/index.js",
+  "engines": {
+    "node": ">=18.17.1"
+  },
   "scripts": {
     "clean": "shx rm -rf dist",
     "webpack": "cross-env NODE_ENV=production webpack",
