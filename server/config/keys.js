@@ -10,4 +10,4 @@ module.exports = {
     url: process.env.MONGO_URI
   },
   production: process.env.NODE_ENV === 'production'
-}
+};

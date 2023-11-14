@@ -1,17 +1,17 @@
-const common = require('./webpack/webpack.common')
-const { merge } = require('webpack-merge')
+const { merge } = require('webpack-merge');
+const common = require('./webpack/webpack.common');
 
-let envConfig
+let envConfig;
 switch (process.env.NODE_ENV) {
   case 'prod':
   case 'production':
-    envConfig = require('./webpack/webpack.prod')
-    break
+    envConfig = require('./webpack/webpack.prod');
+    break;
 
   case 'dev':
   case 'development':
   default:
-    envConfig = require('./webpack/webpack.dev')
+    envConfig = require('./webpack/webpack.dev');
 }
 
-module.exports = merge(common, envConfig)
+module.exports = merge(common, envConfig);

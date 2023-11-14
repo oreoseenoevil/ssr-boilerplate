@@ -1,11 +1,11 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const webpack = require('webpack')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
-const CURRENT_WORKING_DIR = process.cwd()
+const CURRENT_WORKING_DIR = process.cwd();
 
 module.exports = {
   mode: 'production',
@@ -124,7 +124,7 @@ module.exports = {
         minifyJS: true,
         minifyCSS: true,
         minifyURLs: true
-      }      
+      }
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[chunkhash].css'
@@ -134,10 +134,10 @@ module.exports = {
         preset: [
           'default',
           {
-            discardComments: { removeAll: true },
-          },
-        ],
+            discardComments: { removeAll: true }
+          }
+        ]
       }
     })
   ]
-}
+};

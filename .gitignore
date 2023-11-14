@@ -118,5 +118,5 @@ dist
 *.css.map
 *.sass.map
 *.scss.map
-
+`
 # End of https://www.gitignore.io/api/node,sass,react
